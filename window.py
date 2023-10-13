@@ -1,6 +1,6 @@
 from PyQt5 import QtWidgets
 from PyQt5.QtWidgets import QMainWindow
-from recog_panel import Ui_MainWindow
+from UI.recog_panel import Ui_MainWindow
 
 
 class Main_UI(QMainWindow, Ui_MainWindow):

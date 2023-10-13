@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>804</width>
-    <height>600</height>
+    <height>599</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -97,11 +97,14 @@
        <height>21</height>
       </rect>
      </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
      <property name="standardButtons">
       <set>QDialogButtonBox::Close|QDialogButtonBox::Ok</set>
      </property>
      <property name="centerButtons">
-      <bool>true</bool>
+      <bool>false</bool>
      </property>
     </widget>
     <widget class="QDialogButtonBox" name="ganshao_detect">
@@ -121,6 +124,9 @@
      </property>
     </widget>
     <widget class="QDialogButtonBox" name="person_detect">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
      <property name="geometry">
       <rect>
        <x>90</x>
@@ -128,6 +134,9 @@
        <width>121</width>
        <height>21</height>
       </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
      </property>
      <property name="standardButtons">
       <set>QDialogButtonBox::Close|QDialogButtonBox::Ok</set>
@@ -183,11 +192,11 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="vid_input">
      <attribute name="title">
-      <string>視頻</string>
+      <string>Video</string>
      </attribute>
      <widget class="QGroupBox" name="groupBox">
       <property name="geometry">
@@ -199,7 +208,7 @@
        </rect>
       </property>
       <property name="title">
-       <string>輸入源：視頻</string>
+       <string>Input: Video</string>
       </property>
       <widget class="QPushButton" name="up_vid_button">
        <property name="geometry">
@@ -231,7 +240,7 @@
     </widget>
     <widget class="QWidget" name="stream_input">
      <attribute name="title">
-      <string>攝像頭</string>
+      <string>Camera</string>
      </attribute>
      <widget class="QGroupBox" name="groupBox_2">
       <property name="geometry">
@@ -243,7 +252,7 @@
        </rect>
       </property>
       <property name="title">
-       <string>輸入源：攝像頭</string>
+       <string>Input: Camera</string>
       </property>
       <property name="flat">
        <bool>false</bool>
@@ -279,12 +288,12 @@
         <rect>
          <x>10</x>
          <y>20</y>
-         <width>71</width>
+         <width>81</width>
          <height>16</height>
         </rect>
        </property>
        <property name="text">
-        <string>請選擇設備</string>
+        <string>Select device</string>
        </property>
       </widget>
      </widget>
@@ -312,7 +321,7 @@
    </property>
    <widget class="QMenu" name="about_menu">
     <property name="title">
-     <string>关于</string>
+     <string>about</string>
     </property>
    </widget>
    <addaction name="about_menu"/>
